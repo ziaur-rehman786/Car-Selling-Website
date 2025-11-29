@@ -21,3 +21,13 @@ node_modules/
 .env
 .env.local
 
+# Laravel specific
+Laravel Section/vendor/
+Laravel Section/node_modules/
+Laravel Section/.env
+Laravel Section/storage/*.key
+Laravel Section/.phpunit.result.cache
+
+# Exclude the my-app folder (seems to be a duplicate)
+my-app/
+
