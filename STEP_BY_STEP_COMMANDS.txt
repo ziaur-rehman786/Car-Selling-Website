@@ -1,0 +1,47 @@
+STEP-BY-STEP POWERSHELL COMMANDS
+==================================
+
+STEP 1: Move Images Folder
+---------------------------
+Copy and run this command:
+Move-Item -Path "img" -Destination "frontend\assets\img" -Force
+
+Wait for output, then proceed to Step 2
+
+
+STEP 2: Rename Laravel Section to Backend
+------------------------------------------
+Copy and run this command:
+Rename-Item -Path "Laravel Section" -NewName "backend"
+
+Wait for output, then proceed to Step 3
+
+
+STEP 3: Move Documentation Files
+---------------------------------
+Copy and run this command:
+Move-Item -Path "README.md" -Destination "docs\README.md" -Force
+
+Wait for output, then proceed to Step 4
+
+
+STEP 4: Move Backend Documentation
+-----------------------------------
+Copy and run this command:
+Move-Item -Path "backend\SETUP_GUIDE.md" -Destination "docs\SETUP_GUIDE.md" -Force
+
+Wait for output, then proceed to Step 5
+
+
+STEP 5: Remove Empty Folders
+-----------------------------
+Copy and run these commands one by one:
+Remove-Item -Path "css" -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "js" -Force -ErrorAction SilentlyContinue
+
+
+STEP 6: Verify Final Structure
+-------------------------------
+Copy and run this command:
+Get-ChildItem -Directory | Select-Object Name
+

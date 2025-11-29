@@ -22,12 +22,12 @@ node_modules/
 .env.local
 
 # Laravel specific
-Laravel Section/vendor/
-Laravel Section/node_modules/
-Laravel Section/.env
-Laravel Section/storage/*.key
-Laravel Section/.phpunit.result.cache
+backend/vendor/
+backend/node_modules/
+backend/.env
+backend/storage/*.key
+backend/.phpunit.result.cache
 
-# Exclude the my-app folder (seems to be a duplicate)
+# Exclude the my-app folder (duplicate vendor folder - not needed)
 my-app/
 
